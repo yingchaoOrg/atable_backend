@@ -1,0 +1,13 @@
+version: '2'
+services:
+  dev:
+    build: .
+    image: imphpserver:dev
+    privileged: false
+    restart: unless-stopped
+    ports:
+    - 32301:80
+    volumes:
+    - .:/var/www/html
+    tty: true
+    command: /bin/bash
