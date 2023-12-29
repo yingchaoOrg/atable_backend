@@ -1,4 +1,4 @@
-#  聊天的后端
+#  后端
 
 sudo docker exec -it phpserver-dev-1 bash
 
